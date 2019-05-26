@@ -1,0 +1,35 @@
+{
+  "project_info": {
+    "project_number": "383078260247",
+    "firebase_url": "https://tpdm-u3-practica1-angelcruz.firebaseio.com",
+    "project_id": "tpdm-u3-practica1-angelcruz",
+    "storage_bucket": "tpdm-u3-practica1-angelcruz.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:383078260247:android:881855b27850d5b6",
+        "android_client_info": {
+          "package_name": "com.example.tpdm_u3_practica1_angelcruz"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhEoI2yznl4VHB_XaIwMbzB4EXli6kWTk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "383078260247-lo578l0t58ap17omusgdjdeha1pcet0p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
