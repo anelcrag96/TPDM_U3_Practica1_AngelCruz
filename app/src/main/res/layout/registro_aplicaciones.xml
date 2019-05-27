@@ -5,7 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="20dp"
+    android:paddingRight="20dp"
+    android:paddingLeft="20dp"
+    android:paddingTop="10dp"
     tools:context=".RegistroAplicaciones">
 
     <TextView
@@ -27,9 +29,9 @@
 
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="150dp"
+        android:layout_height="80dp"
         android:src="@drawable/ittepic"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
         />
 
     <TextView
@@ -37,7 +39,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/lblFechaAplicacion"
         android:text="Fecha de aplicación"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
         />
 
     <EditText
@@ -52,7 +54,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/lblNombreAplicador"
         android:text="Nombre del aplicador"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
         />
 
     <EditText
@@ -66,15 +68,15 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/lblAula"
+        android:id="@+id/lblAulaAplicador"
         android:text="Aula"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
         />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/txtAula"
+        android:id="@+id/txtAulaAplicador"
         android:hint="Aula aplicación"
         android:inputType="text"
         />
@@ -84,7 +86,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/lblHoraInicioAplicacion"
         android:text="Hora inicio aplicación"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
         />
 
     <EditText
@@ -100,7 +102,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/lblHoraFinAplicacion"
         android:text="Hora fin aplicación"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
         />
 
     <EditText
@@ -116,7 +118,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/btnInsertarAplicacion"
         android:text="Insertar"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
         android:background="@color/colorPrimary"
         />
 

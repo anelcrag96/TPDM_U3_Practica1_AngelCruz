@@ -5,7 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="20dp"
+    android:paddingRight="20dp"
+    android:paddingLeft="20dp"
+    android:paddingTop="10dp"
     tools:context=".RegistroAlumnos">
 
     <TextView
@@ -27,9 +29,9 @@
 
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="150dp"
+        android:layout_height="80dp"
         android:src="@drawable/ittepic"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
         />
 
     <TextView
@@ -37,7 +39,8 @@
         android:layout_height="wrap_content"
         android:id="@+id/lblNoControl"
         android:text="No. de control"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
+        android:inputType="number"
         />
 
     <EditText
@@ -52,7 +55,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/lblNombre"
         android:text="Nombre del alumno"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
         />
 
     <EditText
@@ -68,7 +71,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/lblApellidos"
         android:text="Apellidos del alumno"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
         />
 
     <EditText
@@ -84,7 +87,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/lblCarrera"
         android:text="Carrera"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
         />
 
     <EditText
@@ -92,7 +95,6 @@
         android:layout_height="wrap_content"
         android:id="@+id/txtCarrera"
         android:hint="Carrera"
-        android:inputType="date"
         />
 
     <TextView
@@ -100,7 +102,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/lblFechaAplicacion"
         android:text="Fecha de aplicación TOEFL"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
         />
 
     <EditText
@@ -116,7 +118,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/btnInsertarAlumno"
         android:text="Insertar"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
         android:background="@color/colorPrimary"
         />
 

@@ -1,10 +1,9 @@
 package com.example.tpdm_u3_practica1_angelcruz;
 
 public class Alumnos {
-    int nocontrol;
-    String nombre, apellidos, carrera, fechaaplicacion;
+    String nocontrol, nombre, apellidos, carrera, fechaaplicacion;
 
-    public Alumnos(int nc, String nom, String ape, String carr, String fec){
+    public Alumnos(String nc, String nom, String ape, String carr, String fec){
         this.nocontrol=nc;
         this.nombre=nom;
         this.apellidos=ape;
@@ -12,11 +11,11 @@ public class Alumnos {
         this.fechaaplicacion=fec;
     }//constructor
 
-    public int getNocontrol() {
+    public String getNocontrol() {
         return nocontrol;
     }
 
-    public void setNocontrol(int nocontrol) {
+    public void setNocontrol(String nocontrol) {
         this.nocontrol = nocontrol;
     }
 
