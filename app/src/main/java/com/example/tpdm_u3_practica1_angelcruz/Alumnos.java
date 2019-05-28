@@ -11,10 +11,6 @@ public class Alumnos {
         this.fechaaplicacion=fec;
     }//constructor
 
-    public Alumnos(){
-
-    }
-
     public String getId(){
         return id;
     }
