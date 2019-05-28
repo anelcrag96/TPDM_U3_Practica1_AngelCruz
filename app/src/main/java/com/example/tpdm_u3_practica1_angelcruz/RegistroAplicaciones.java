@@ -37,12 +37,12 @@ public class RegistroAplicaciones extends AppCompatActivity {
         registrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final Aplicaciones aplicaciones=new Aplicaciones(fecha.getText().toString(), aplicador.getText().toString(), aula.getText().toString(), horainicio.getText().toString(), horafin.getText().toString());
-                realtime.child("docente").push().setValue(aplicaciones)
+                Aplicaciones aplicaciones=new Aplicaciones(fecha.getText().toString(), aplicador.getText().toString(), aula.getText().toString(), horainicio.getText().toString(), horafin.getText().toString());
+                realtime.child("Aplicacion").push().setValue(aplicaciones)
                         .addOnSuccessListener(new OnSuccessListener<Void>() {
                             @Override
                             public void onSuccess(Void aVoid) {
-                                Toast.makeText(RegistroAplicaciones.this,"Exito!! "+fecha+" insertado",Toast.LENGTH_SHORT).show();
+                                Toast.makeText(RegistroAplicaciones.this,"Exito!! "+fecha.getText().toString()+" insertado",Toast.LENGTH_SHORT).show();
                                 fecha.setText("");
                                 aplicador.setText("");
                                 aula.setText("");
@@ -53,7 +53,7 @@ public class RegistroAplicaciones extends AppCompatActivity {
                         .addOnFailureListener(new OnFailureListener() {
                             @Override
                             public void onFailure(@NonNull Exception e) {
-                                Toast.makeText(RegistroAplicaciones.this,"Error!! "+fecha+" no se inserto",Toast.LENGTH_SHORT).show();
+                                Toast.makeText(RegistroAplicaciones.this,"Error!! "+fecha.getText().toString()+" no se inserto",Toast.LENGTH_SHORT).show();
                             }//onFailure
                         });
             }//onClick

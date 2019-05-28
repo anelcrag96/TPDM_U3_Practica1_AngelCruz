@@ -71,24 +71,24 @@ public class ListadoAlumnos extends AppCompatActivity {
                             Alumnos d=dataSnapshot.getValue(Alumnos.class);
 
                             if(d!=null){
-                                d.setNocontrol(snap.getKey());
+                                d.setId(snap.getKey());
                                 datosalumnos.add(d);
-                            }
+                            }//if
                             cargarDatosAlumno();
-                        }
+                        }//onDataChange
 
                         @Override
                         public void onCancelled(@NonNull DatabaseError databaseError) {
 
-                        }
+                        }//onCancelled
                     });
-                }
-            }
+                }//for
+            }//onDataChange
 
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {
 
-            }
+            }//onCancelled
         });
 
         listaalumnos.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -101,11 +101,12 @@ public class ListadoAlumnos extends AppCompatActivity {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
                                 Intent i=new Intent(ListadoAlumnos.this, DatosAlumnos.class);
-                                i.putExtra("nocontrol",datosalumnos.get(position).getNocontrol());
-                                i.putExtra("nombre",datosalumnos.get(position).getNombre());
-                                i.putExtra("apellidos",datosalumnos.get(position).getApellidos());
-                                i.putExtra("carrera",datosalumnos.get(position).getCarrera());
-                                i.putExtra("fechaaplicacion",datosalumnos.get(position).getFechaaplicacion());
+                                i.putExtra("Id",datosalumnos.get(position).getId());
+                                i.putExtra("NoControl",datosalumnos.get(position).getNocontrol());
+                                i.putExtra("Nombre",datosalumnos.get(position).getNombre());
+                                i.putExtra("Apellidos",datosalumnos.get(position).getApellidos());
+                                i.putExtra("Carrera",datosalumnos.get(position).getCarrera());
+                                i.putExtra("FechaAplicacion",datosalumnos.get(position).getFechaaplicacion());
                                 startActivity(i);
                                 finish();
                             }
@@ -120,7 +121,7 @@ public class ListadoAlumnos extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu){
         getMenuInflater().inflate(R.menu.opciones,menu);
         return super.onCreateOptionsMenu(menu);
-    }
+    }//onCreateOptionsMenu
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item){
@@ -130,20 +131,20 @@ public class ListadoAlumnos extends AppCompatActivity {
                 startActivity(insertar);
                 finish();
                 break;
-        }
+        }//switch
         return super.onOptionsItemSelected(item);
-    }
+    }//onOptionsItemSelected
 
     private void cargarDatosAlumno(){
         if (datosalumnos.size()==0){
             return;
-        }
+        }//if
         String nombre[]=new String[datosalumnos.size()];
         for (int i=0; i<nombre.length; i++){
             Alumnos a=datosalumnos.get(i);
             nombre[i]=a.nombre;
-        }
+        }//for
         ArrayAdapter<String> adapter=new ArrayAdapter<>(this,android.R.layout.simple_list_item_1,nombre);
         listaalumnos.setAdapter(adapter);
-    }
-}
+    }//cargarDatosAlumno
+}//class

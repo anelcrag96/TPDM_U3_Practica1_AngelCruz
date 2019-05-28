@@ -46,7 +46,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/txtFechaAplicacion"
-        android:hint="Ingresar fecha DD/MM/AAAA"
+        android:hint="Ingresar fecha (AAAA/MM/DD)"
+        android:inputType="date"
         />
 
     <TextView
@@ -94,7 +95,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/txtHoraInicioAplicacion"
         android:hint="Hora inicio aplicación"
-        android:inputType="text"
+        android:inputType="time"
         />
 
     <TextView
@@ -110,7 +111,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/txtHoraFinAplicacion"
         android:hint="Hora fin aplicación"
-        android:inputType="text"
+        android:inputType="time"
         />
 
     <Button

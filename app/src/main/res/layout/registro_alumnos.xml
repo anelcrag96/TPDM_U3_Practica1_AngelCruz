@@ -48,6 +48,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/txtNoControl"
         android:hint="Ingresa No. Control"
+        android:inputType="text"
         />
 
     <TextView
@@ -95,6 +96,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/txtCarrera"
         android:hint="Carrera"
+        android:inputType="text"
         />
 
     <TextView
@@ -109,7 +111,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/txtFechaAplicacion"
-        android:hint="Fecha de aplicación"
+        android:hint="Fecha de aplicación (AAAA/MM/DD)"
         android:inputType="date"
         />
 

@@ -1,7 +1,7 @@
 package com.example.tpdm_u3_practica1_angelcruz;
 
 public class Alumnos {
-    String nocontrol, nombre, apellidos, carrera, fechaaplicacion;
+    String id, nocontrol, nombre, apellidos, carrera, fechaaplicacion;
 
     public Alumnos(String nc, String nom, String ape, String carr, String fec){
         this.nocontrol=nc;
@@ -10,6 +10,18 @@ public class Alumnos {
         this.carrera=carr;
         this.fechaaplicacion=fec;
     }//constructor
+
+    public Alumnos(){
+
+    }
+
+    public String getId(){
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
 
     public String getNocontrol() {
         return nocontrol;

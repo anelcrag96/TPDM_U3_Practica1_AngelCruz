@@ -1,15 +1,27 @@
 package com.example.tpdm_u3_practica1_angelcruz;
 
 public class Aplicaciones {
-    String aplicador, fechaaplicacion, aula, horainicio, horafin;
+    String id, aplicador, fechaaplicacion, aula, horainicio, horafin;
 
-    public Aplicaciones(String aplicador, String fechaaplicacion, String aula, String horainicio, String horafin){
-        this.aplicador=aplicador;
+    public Aplicaciones(String fechaaplicacion, String aplicador, String aula, String horainicio, String horafin){
         this.fechaaplicacion=fechaaplicacion;
+        this.aplicador=aplicador;
         this.aula=aula;
         this.horainicio=horainicio;
         this.horafin=horafin;
     }//constructor
+
+    public Aplicaciones(){
+
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
 
     public String getAplicador(){
         return aplicador;
