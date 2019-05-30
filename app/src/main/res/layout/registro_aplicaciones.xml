@@ -37,7 +37,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/lblFechaAplicacion"
+        android:id="@+id/lblFechaAplicacionTOEFL"
         android:text="Fecha de aplicación"
         android:layout_marginTop="5dp"
         />
@@ -45,7 +45,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/txtFechaAplicacion"
+        android:id="@+id/txtFechaAplicacionTOEFL"
         android:hint="Ingresar fecha (AAAA/MM/DD)"
         android:inputType="date"
         />
@@ -53,7 +53,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/lblNombreAplicador"
+        android:id="@+id/lblNombreAplicadorTOEFL"
         android:text="Nombre del aplicador"
         android:layout_marginTop="5dp"
         />
@@ -61,7 +61,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/txtNombreAplicador"
+        android:id="@+id/txtNombreAplicadorTOEFL"
         android:hint="Nombre del aplicador"
         android:inputType="text"
         />
@@ -69,7 +69,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/lblAulaAplicador"
+        android:id="@+id/lblAulaAplicacionTOEFL"
         android:text="Aula"
         android:layout_marginTop="5dp"
         />
@@ -77,7 +77,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/txtAulaAplicador"
+        android:id="@+id/txtAulaAplicacionTOEFL"
         android:hint="Aula aplicación"
         android:inputType="text"
         />
@@ -85,7 +85,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/lblHoraInicioAplicacion"
+        android:id="@+id/lblHoraInicioAplicacionTOEFL"
         android:text="Hora inicio aplicación"
         android:layout_marginTop="5dp"
         />
@@ -93,7 +93,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/txtHoraInicioAplicacion"
+        android:id="@+id/txtHoraInicioAplicacionTOEFL"
         android:hint="Hora inicio aplicación"
         android:inputType="time"
         />
@@ -101,7 +101,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/lblHoraFinAplicacion"
+        android:id="@+id/lblHoraFinAplicacionTOEFL"
         android:text="Hora fin aplicación"
         android:layout_marginTop="5dp"
         />
@@ -109,7 +109,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/txtHoraFinAplicacion"
+        android:id="@+id/txtHoraFinAplicacionTOEFL"
         android:hint="Hora fin aplicación"
         android:inputType="time"
         />
@@ -117,7 +117,7 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/btnInsertarAplicacion"
+        android:id="@+id/btnInsertarAplicacionTOEFL"
         android:text="Insertar"
         android:layout_marginTop="5dp"
         android:background="@color/colorPrimary"
@@ -126,7 +126,7 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/btnCancelarAplicacion"
+        android:id="@+id/btnCancelarAplicacionTOEFL"
         android:text="Cancelar"
         android:background="@color/colorPrimary"
         android:layout_marginTop="5dp"

@@ -24,11 +24,11 @@ public class RegistroAlumnos extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.registro_alumnos);
 
-        nocontrol=findViewById(R.id.txtNoControl);
-        nombre=findViewById(R.id.txtNombre);
-        apellidos=findViewById(R.id.txtApellidos);
-        carrera=findViewById(R.id.txtCarrera);
-        fechaaplicacion=findViewById(R.id.txtFechaAplicacion);
+        nocontrol=findViewById(R.id.txtNoControlAlumno);
+        nombre=findViewById(R.id.txtNombreAlumno);
+        apellidos=findViewById(R.id.txtApellidosAlumno);
+        carrera=findViewById(R.id.txtCarreraAlumno);
+        fechaaplicacion=findViewById(R.id.txtFechaAplicacionAlumno);
 
         insertar=findViewById(R.id.btnInsertarAlumno);
         cancelar=findViewById(R.id.btnCancelarAlumno);

@@ -24,13 +24,13 @@ public class RegistroAplicaciones extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.registro_aplicaciones);
 
-        fecha=findViewById(R.id.txtFechaAplicacion);
-        aplicador=findViewById(R.id.txtNombreAplicador);
-        aula=findViewById(R.id.txtAulaAplicador);
-        horainicio=findViewById(R.id.txtHoraInicioAplicacion);
-        horafin=findViewById(R.id.txtHoraFinAplicacion);
-        registrar=findViewById(R.id.btnInsertarAplicacion);
-        cancelar=findViewById(R.id.btnCancelarAplicacion);
+        fecha=findViewById(R.id.txtFechaAplicacionTOEFL);
+        aplicador=findViewById(R.id.txtNombreAplicadorTOEFL);
+        aula=findViewById(R.id.txtAulaAplicacionTOEFL);
+        horainicio=findViewById(R.id.txtHoraInicioAplicacionTOEFL);
+        horafin=findViewById(R.id.txtHoraFinAplicacionTOEFL);
+        registrar=findViewById(R.id.btnInsertarAplicacionTOEFL);
+        cancelar=findViewById(R.id.btnCancelarAplicacionTOEFL);
 
         realtime= FirebaseDatabase.getInstance().getReference();
 

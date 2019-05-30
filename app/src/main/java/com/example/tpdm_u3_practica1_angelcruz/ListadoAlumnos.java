@@ -24,13 +24,15 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 public class ListadoAlumnos extends AppCompatActivity {
     Button regresar;
     ListView listaalumnos;
     DatabaseReference realtime;
     List<Alumnos> datosalumnos;
-    ArrayAdapter adaptador;
+    List<Map> otro;
+    ArrayAdapter<String> adaptador;
     List lista;
 
     @Override
@@ -41,6 +43,7 @@ public class ListadoAlumnos extends AppCompatActivity {
         listaalumnos=findViewById(R.id.listaAlumno);
         regresar=findViewById(R.id.btnRegresarListaAlumno);
 
+        otro=new ArrayList<>();
         lista=new ArrayList();
 
         realtime= FirebaseDatabase.getInstance().getReference();
@@ -101,12 +104,12 @@ public class ListadoAlumnos extends AppCompatActivity {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
                                 Intent i=new Intent(ListadoAlumnos.this, DatosAlumnos.class);
-                                i.putExtra("Id",datosalumnos.get(position).getId());
-                                i.putExtra("NoControl",datosalumnos.get(position).getNocontrol());
-                                i.putExtra("Nombre",datosalumnos.get(position).getNombre());
-                                i.putExtra("Apellidos",datosalumnos.get(position).getApellidos());
-                                i.putExtra("Carrera",datosalumnos.get(position).getCarrera());
-                                i.putExtra("FechaAplicacion",datosalumnos.get(position).getFechaaplicacion());
+                                i.putExtra("id",datosalumnos.get(position).getId());
+                                i.putExtra("nocontrol",datosalumnos.get(position).getNocontrol());
+                                i.putExtra("nombre",datosalumnos.get(position).getNombre());
+                                i.putExtra("apellidos",datosalumnos.get(position).getApellidos());
+                                i.putExtra("carrera",datosalumnos.get(position).getCarrera());
+                                i.putExtra("fechaaplicacion",datosalumnos.get(position).getFechaaplicacion());
                                 startActivity(i);
                                 finish();
                             }

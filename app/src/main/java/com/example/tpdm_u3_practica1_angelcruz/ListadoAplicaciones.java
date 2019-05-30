@@ -94,12 +94,12 @@ public class ListadoAplicaciones extends AppCompatActivity {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
                                 Intent i=new Intent(ListadoAplicaciones.this, DatosAplicaciones.class);
-                                i.putExtra("Id",datos.get(position).getId());
-                                i.putExtra("FechaAplicacion",datos.get(position).getFechaaplicacion());
-                                i.putExtra("Aplicador",datos.get(position).getAplicador());
-                                i.putExtra("Aula",datos.get(position).getAula());
-                                i.putExtra("HoraInicio",datos.get(position).getHorainicio());
-                                i.putExtra("HoraFin",datos.get(position).getHorafin());
+                                i.putExtra("id",datos.get(position).getId());
+                                i.putExtra("fechaaplicacion",datos.get(position).getFechaaplicacion());
+                                i.putExtra("aplicador",datos.get(position).getAplicador());
+                                i.putExtra("aula",datos.get(position).getAula());
+                                i.putExtra("horainicio",datos.get(position).getHorainicio());
+                                i.putExtra("horafin",datos.get(position).getHorafin());
                                 startActivity(i);
                                 finish();
                             }//onClick

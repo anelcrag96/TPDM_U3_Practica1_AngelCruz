@@ -19,7 +19,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/lblNoControl"
+        android:id="@+id/lblNoControlAlumnoModificar"
         android:text="No. de control"
         android:layout_marginTop="10dp"
         />
@@ -27,14 +27,14 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/txtNoControl"
+        android:id="@+id/txtNoControlAlumnoModificar"
         android:hint="Ingresa No. Control"
         />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/lblNombre"
+        android:id="@+id/lblNombreAlumnoModificar"
         android:text="Nombre del alumno"
         android:layout_marginTop="10dp"
         />
@@ -42,7 +42,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/txtNombre"
+        android:id="@+id/txtNombreAlumnoModificar"
         android:hint="Nombre del alumno"
         android:inputType="text"
         />
@@ -50,7 +50,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/lblApellidos"
+        android:id="@+id/lblApellidosAlumnoModificar"
         android:text="Apellidos del alumno"
         android:layout_marginTop="10dp"
         />
@@ -58,7 +58,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/txtApellidos"
+        android:id="@+id/txtApellidosAlumnoModificar"
         android:hint="Apellidos del alumno"
         android:inputType="text"
         />
@@ -66,7 +66,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/lblCarrera"
+        android:id="@+id/lblCarreraAlumnoModificar"
         android:text="Carrera"
         android:layout_marginTop="10dp"
         />
@@ -74,7 +74,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/txtCarrera"
+        android:id="@+id/txtCarreraAlumnoModificar"
         android:hint="Carrera"
         android:inputType="date"
         />
@@ -82,7 +82,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/lblFechaAplicacion"
+        android:id="@+id/lblFechaAplicacionAlumnoModificar"
         android:text="Fecha de aplicación TOEFL"
         android:layout_marginTop="10dp"
         />
@@ -90,7 +90,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/txtFechaAplicacion"
+        android:id="@+id/txtFechaAplicacionAlumnoModificar"
         android:hint="Fecha de aplicación"
         android:inputType="date"
         />
@@ -98,7 +98,7 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/btnModificarAlumno"
+        android:id="@+id/btnModificarAlumnoModificar"
         android:layout_marginTop="10dp"
         android:text="Modificar"
         android:background="@color/colorPrimary"
@@ -107,7 +107,7 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/btnEliminarAlumno"
+        android:id="@+id/btnEliminarAlumnoModificar"
         android:layout_marginTop="5dp"
         android:text="Eliminar"
         android:background="@color/colorPrimary"
@@ -116,7 +116,7 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/btnRegresarAlumno"
+        android:id="@+id/btnRegresarAlumnoModificar"
         android:layout_marginTop="5dp"
         android:text="Regresar"
         android:background="@color/colorPrimary"

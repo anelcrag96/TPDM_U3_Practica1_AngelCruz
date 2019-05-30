@@ -37,7 +37,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/lblNoControl"
+        android:id="@+id/lblNoControlAlumno"
         android:text="No. de control"
         android:layout_marginTop="5dp"
         android:inputType="number"
@@ -46,7 +46,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/txtNoControl"
+        android:id="@+id/txtNoControlAlumno"
         android:hint="Ingresa No. Control"
         android:inputType="text"
         />
@@ -54,7 +54,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/lblNombre"
+        android:id="@+id/lblNombreAlumno"
         android:text="Nombre del alumno"
         android:layout_marginTop="5dp"
         />
@@ -62,7 +62,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/txtNombre"
+        android:id="@+id/txtNombreAlumno"
         android:hint="Nombre del alumno"
         android:inputType="text"
         />
@@ -70,7 +70,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/lblApellidos"
+        android:id="@+id/lblApellidosAlumno"
         android:text="Apellidos del alumno"
         android:layout_marginTop="5dp"
         />
@@ -78,7 +78,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/txtApellidos"
+        android:id="@+id/txtApellidosAlumno"
         android:hint="Apellidos del alumno"
         android:inputType="text"
         />
@@ -86,7 +86,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/lblCarrera"
+        android:id="@+id/lblCarreraAlumno"
         android:text="Carrera"
         android:layout_marginTop="5dp"
         />
@@ -94,7 +94,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/txtCarrera"
+        android:id="@+id/txtCarreraAlumno"
         android:hint="Carrera"
         android:inputType="text"
         />
@@ -102,7 +102,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/lblFechaAplicacion"
+        android:id="@+id/lblFechaAplicacionAlumno"
         android:text="Fecha de aplicación TOEFL"
         android:layout_marginTop="5dp"
         />
@@ -110,7 +110,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/txtFechaAplicacion"
+        android:id="@+id/txtFechaAplicacionAlumno"
         android:hint="Fecha de aplicación (AAAA/MM/DD)"
         android:inputType="date"
         />
